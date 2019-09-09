@@ -1,0 +1,10 @@
+<h1>the text you entered</h1>
+<p>{{fullText}}</p>
+
+<a href="{% url 'home' %}">start again</a>
+<h2>the length of that text is {{countOfLetters}} letters</h2>
+<h2>the length of that text is {{countOfWords}} words</h2>
+{% for word, totalCount in sortedDic%}
+{{ word }} --> {{totalCount}}
+<br/>
+{% endfor %}
